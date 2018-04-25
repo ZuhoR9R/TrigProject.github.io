@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  font-family: Courier New;
+  color: white;
+}
+
+.slides-main {
+  padding: 16px;
+}
+
+.slides-main p {
+  text-align: center;
+  line-height: 30px;
+}
+
+.top-container {
+  text-align: center;
+  height: 100px;
+}
+
+.top-container h1 {
+  max-height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+.header {
+  height: 85px;
+  background: black;
+  color: #f1f1f1;
+}
+
+.header ul {
+  text-align: center;
+  height: 85px;
+  padding: 0;
+  margin: 0;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: Courier New;
+}
+
+.header ul li {
+  display: inline-block;
+  max-height: 85px; /* These 3 lines make them vertically centered */
+  line-height: 85px;
+  vertical-align: middle;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content p {
+  line-height: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .slides-main {
+  padding-top: 100px; /* 80px + 10px + 10px (full height of .top-container) */
+}
+
+.link {
+  	transition: 0.3s ease;
+  	background-color: black;
+  	color: #ffffff;
+  	font-size: 20px;
+  	text-decoration: none;
+  	border-top: 4px solid black;
+  	border-bottom: 4px solid black;
+  	padding: 20px 0;
+  	margin: 0 20px;
+}
+
+.link:hover {
+ 	 border-top: 4px solid #ffffff;
+  	border-bottom: 4px solid #ffffff;
+  	padding: 6px 0; 
+}
